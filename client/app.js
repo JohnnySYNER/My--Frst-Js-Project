@@ -102,14 +102,18 @@ document.getElementById("signUpUnderlinedid").addEventListener("click", function
               },
               body: JSON.stringify(formData),
             })
-              .then((response) => response.json())
+              .then((response) => {
+                // Parse the response as JSON
+                return response.json();
+              })
               .then((data) => {
                 console.log(data);
-                // Handle the response from the server if needed
+                // Handle the response data, which is now a JSON object
               })
               .catch((error) => {
                 console.error('Error sending the data:', error);
               });
+            
           } else {
             console.log('Passwords Do Not Match');
             document.getElementById('passwordDoNotMatchId').style.display = 'block';
