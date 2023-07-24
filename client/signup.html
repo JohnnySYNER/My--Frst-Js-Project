@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://fonts.googleapis.com/css2?family=Itim&family=Jacques+Francois&family=Judson&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">    
+<title>Sign up</title>
+</head>
+<body>
+    <div class="whole-page-container-signUp">
+        <div class="navBar-signUp-page">
+            <h1 id="homeNav">Home</h1>
+            <h1 id="blogNav">Blog</h1>
+            <h1 id="FAQNav">FAQ</h1>
+      </div>
+
+      <div class="signUpForm">
+        <form id="signUpFormId" action="">
+            <input class="signUpImputBox" type="text" id="fsignUpName" name="fsignUpName" placeholder="Full Name"> <br>
+            <input class="signUpImputBox" type="email" id="fsignUpEmail" name="fsignUpEmail" placeholder="Email"><br>
+            <input class="signUpImputBox" type="password" id="fsignUpPassword"name="fPassword" placeholder="Password"><br>
+            <input class="signUpImputBox" type="password" id="fsignUpConfirmPassword"name="fConfirmPassword" placeholder="Confirm Password"><br>
+        <input id="signUpBtn" class="submitBtnSignUp" type="submit" value="Sign Up">
+        </form>
+        <span id="passwordDoNotMatchId" class="passwordDoNotMatch" style="display: none;">Passwords Do not Match</span>
+        
+        </div>
+        <div class="container-for-alreadyHaveAnAccount">
+        <span class="alreadyHaveAnAccount">Already have an account?</span><span id ="signInUnderlinedid"class="signInUnderlined">Sign In</span>     
+    </div>
+    </div>
+      <script src="./app.js"></script>
+</body>
+</html>
